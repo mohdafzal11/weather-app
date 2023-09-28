@@ -1,0 +1,225 @@
+
+/* Set a background color for the body */
+body {
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+    height: 100vh;
+}
+
+/* Style the container for the weather app */
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the header with app title and unit selection */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+     color: #030405; /*Highlighted title color */
+    text-align: center;
+}
+
+/* Style the unit selection container */
+.unit-toggle {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+/* Style the unit label */
+.unit-toggle label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Style the unit selection dropdown */
+.unit-toggle select {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.unit-toggle select:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+.unit-toggle select:focus {
+    outline: none; /* Remove focus outline */
+    background-color: #e0e0e0; /* Slightly darker gray when focused */
+}
+
+/* Default styles for the search-container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 60%;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the main content area */
+main {
+    text-align: center;
+}
+
+/* Style the location input field */
+.search-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Style the "Get Weather" button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the weather information display */
+#weather-info {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the weather condition description */
+#weather-description {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style individual weather details */
+.weather-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style the temperature */
+#temperature {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0d1217; /* Highlighted temperature color */
+}
+/* When search input in empty */
+.hidden{
+    display: none;
+}
+/* Additional styles for error messages */
+#error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Additional styles for responsive design */
+@media screen and (min-width: 768px) {
+    #weather-info {
+        padding: 15px;
+    }
+    .weather-details p {
+        font-size: 18px;
+    }
+    #temperature {
+        font-size: 28px;
+    }
+}
+
+/* Style the error message */
+#error-message {
+    color: red;
+}
+
+/* Responsive Design for Tablets */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    button {
+        width: 30%;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+
+
+
